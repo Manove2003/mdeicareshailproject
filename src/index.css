@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+.bg-radial-sky {
+  background-image: radial-gradient(circle, #DAE5FC, #F1F6FF);
+}

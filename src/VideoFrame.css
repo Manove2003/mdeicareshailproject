@@ -1,0 +1,47 @@
+.frame-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  /* background: #fff; */
+}
+
+.frame {
+  position: relative;
+  border: 2px solid #000;
+  border-radius: 25px;
+  padding: 4px;
+  /* background: #fff; */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.frame::before {
+  /* subtle inner outline */
+  content: '';
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
+  border: 2px solid #000;
+  border-radius: 25px;
+  z-index: -1;
+}
+
+.frame1 {
+  /* second “screen bezel” */
+  position: relative;
+  border: 2px solid #000;
+  border-radius: 25px;
+  padding: 16px;
+  background: #fff;
+  overflow: hidden; /* ensure video corners are clipped */
+}
+
+.video {
+  display: block;
+  width: 768px;
+  height: 400px;
+  border-radius: 16px;
+  background-color: #222;
+}
